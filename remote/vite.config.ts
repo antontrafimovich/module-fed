@@ -3,7 +3,8 @@ import react from '@vitejs/plugin-react';
 import { federation } from '@module-federation/vite';
 
 // https://vite.dev/config/
-export default defineConfig({
+export default defineConfig(({ command }) => ({
+  base: command === 'build' ? './' : '/',
   plugins: [
     react(),
     federation({
@@ -25,4 +26,4 @@ export default defineConfig({
   build: {
     target: 'chrome89'
   }
-});
+}));
