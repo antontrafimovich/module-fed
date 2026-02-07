@@ -45,7 +45,7 @@ export class ReactComponent implements AfterViewInit, OnDestroy {
         return;
       }
 
-      this.unmountReactApp = remoteModule.mount(this.reactHostRef.nativeElement);
+      this.unmountReactApp = remoteModule.mount(this.reactHostRef.nativeElement, {routingMode: 'browser', initialPath: '/react-component'});
     } catch (error) {
       console.error('Could not load remote React component.', error);
     }

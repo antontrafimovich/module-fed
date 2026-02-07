@@ -6,4 +6,4 @@ if (!rootElement) {
   throw new Error('Could not find root element for React remote.');
 }
 
-mount(rootElement);
+mount(rootElement, { routingMode: 'browser' });

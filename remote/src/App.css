@@ -1,42 +1,58 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+.remote-app {
+  color: #0f172a;
+  display: grid;
+  gap: 16px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.remote-header {
+  border-bottom: 1px solid #d1d5db;
+  display: grid;
+  gap: 12px;
+  padding-bottom: 12px;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.remote-header h1 {
+  font-size: 1.5rem;
+  margin: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.remote-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
 }
 
-.card {
-  padding: 2em;
+.remote-link {
+  background: #eef2ff;
+  border-radius: 6px;
+  color: #1e3a8a;
+  display: inline-block;
+  padding: 6px 10px;
+  text-decoration: none;
 }
 
-.read-the-docs {
-  color: #888;
+.remote-link.is-active {
+  background: #1d4ed8;
+  color: #ffffff;
+}
+
+.remote-card {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  display: grid;
+  gap: 10px;
+  max-width: 720px;
+  padding: 16px;
+}
+
+.remote-card h2 {
+  font-size: 1.25rem;
+  margin: 0;
+}
+
+.remote-card p {
+  line-height: 1.5;
+  margin: 0;
 }
